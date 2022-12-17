@@ -1,0 +1,25 @@
+//WAP to show function with argument
+#include <stdio.h>
+
+void main() 
+{
+    void addition(int,int);
+    void subtraction(int,int);
+    int variable1,variable2;
+    printf("enter numbers = ");
+    scanf("%d\n%d",&variable1,&variable2);
+    addition(variable1,variable2);
+    subtraction(variable1,variable2);
+}
+void addition(int var1,int var2)
+{
+int sum;
+sum=var1+var2;
+printf("\nAddition = %d",sum);
+}
+void subtraction(int var1,int var2)
+{
+    int sub;	
+    sub=var1-var2;
+    printf("\nsubtraction = %d",sub);
+}

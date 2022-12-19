@@ -1,0 +1,40 @@
+#include<stdio.h>
+
+void main()
+{
+int sum,loop1,loop2,var1[3][2],var2[3][2],var3[3][2];
+printf("values for first matrix...\n");
+    for( loop1=0;loop1<3;loop1++)
+    {
+        for(loop2=0;loop2<2;loop2++)
+        {
+            printf("enter values :");
+            scanf("%d",&var1[loop1][loop2]);
+        }
+    }
+printf("values for the second matrix...\n");
+    for(loop1=0;loop1<3;loop1++)
+    {
+        for(loop2=0;loop2<2;loop2++)
+        {
+            printf("enter values :");
+            scanf("%d",&var2[loop1][loop2]);
+        }
+    }
+    for(loop1=0;loop1<3;loop1++)
+    {
+        for(loop2=0;loop2<2;loop2++)
+        {
+        var3[loop1][loop2] =var1[loop1][loop2]+var1[loop1][loop2];    
+        }
+    }
+printf("sum of two matrix...\n");
+    for(loop1=0;loop1<3;loop1++)
+    {
+        for(loop2=0;loop2<2;loop2++)
+        {
+            printf("%d\t",var3[loop1][loop2]);
+            printf("\n");
+        }
+    }    
+}

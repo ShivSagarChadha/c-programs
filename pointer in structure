@@ -1,0 +1,23 @@
+    #include <stdio.h>
+
+void main() 
+{
+    struct student
+    {
+        char name[100];
+        int rollno;
+        int age;
+        char clas[50];
+    }
+    student1,*pointer;
+    pointer=&student1;
+    printf("enter name = ");
+    gets(student1.name);
+    printf("enter roll number = ");     
+    scanf("%d",&student1.rollno);
+    printf("enter age = ");
+    scanf("%d",&student1.age);
+    printf("enter class = ");
+    scanf("%s",student1.clas);
+    printf("enter values: \n%s\n%d\n%d\n%s",pointer->name,pointer->rollno,pointer->age,pointer->clas);
+}

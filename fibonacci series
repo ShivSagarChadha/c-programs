@@ -1,0 +1,28 @@
+#include <stdio.h>
+void main()
+{
+    void fib(int);
+    int variable;
+    printf("enter the n number for fibonacci series:\n");
+    scanf("%d",&variable);
+     fib(variable);
+}
+ void fib(int variable)
+{
+    int variable1 = 0,variable2 = 1,variable3 = 0;
+    if(variable==2)
+    {
+        printf("%d %d",variable1,variable2);
+    }
+    else
+    {
+         printf("%d %d",variable1,variable2);
+        for(int loop=1;loop<=variable;loop++)
+        {
+            variable3=variable1+variable2;
+            variable1=variable2;
+            variable2=variable3;
+            printf("\t%d",variable3);
+        }
+    }
+}

@@ -1,0 +1,33 @@
+ #include<stdio.h>
+
+void main()
+{
+int small,big,loop1,loop2,c,d,var[100][100];
+printf("enter number of rows and columns = ");
+scanf("%d%d",&c,&d);
+    for( loop1=0;loop1<c;loop1++)
+    {
+        for(loop2=0;loop2<d;loop2++)
+        {
+            printf("enter values:");
+            scanf("%d",&var[loop1][loop2]);
+        }
+    }
+    small=var[0][0];
+    big=var[0][0];
+    for(loop1=1;loop1<c;loop1++)
+    {
+        for(loop2=1;loop2<d;loop2++)
+        {
+        if(var[loop1][loop2]<small)
+        {
+            small=var[loop1][loop2];
+        }
+        if(var[loop1][loop2]>big)
+        {
+            big=var[loop1][loop2];   
+        }
+        }
+    }
+    printf("smallest number = %d\nbiggest number = %d",small,big);
+}
